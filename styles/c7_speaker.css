@@ -17,6 +17,54 @@ body {
 a:focus, a:hover {
 	font-style: italic;
 }
+
+
+nav ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+nav ul li{
+	float: left;
+}
+
+nav ul li a{
+	display: block;
+	width:160px;
+	text-align: center;
+	padding: 1em 0 1em 0;
+	text-decoration: none;
+	background-color: #800000;
+	color: white;
+	font-weight: bold;
+}
+
+nav a.current{
+	color:yellow;
+}
+
+#nav_menu ul ul{
+	display: none;
+	position: absolute;
+	top: 100%;
+}
+
+#nav_menu ul ul li{
+	float:none;
+}
+
+#nav_menu ul li:hover > ul{
+	display: block;
+}
+
+#nav_menu > ul::after{
+	content: "";
+	clear: both;
+	display: block;
+}
+
 /* the styles for the header */
 header {
 	padding: 1.5em 0 2em 0;
@@ -121,3 +169,4 @@ footer p {
 	color: white;
 	padding: 1em 0;
 }
+
