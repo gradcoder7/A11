@@ -9,14 +9,18 @@ html {
 body {
 	font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
-    width: 800px;
+    width: 98%;
     margin: 0 auto;
     border: 3px solid #931420;
     background-color: #fffded;
+	max-width: 960px;
 }
 a:focus, a:hover {
 	font-style: italic;
 }
+
+
+
 /* the styles for the header */
 header {
 	padding: 1.5em 0 2em 0;
@@ -40,7 +44,7 @@ header h3 {
 }
 header img {
 	float: left;
-	padding: 0 30px;
+	padding: 0 30%;
 }
 .shadow {
 	text-shadow: 2px 2px 2px #800000;
@@ -68,16 +72,20 @@ header img {
 #nav_menu a.current {
 	color: yellow;
 }
+
+/*Sub Menu*/
 #nav_menu ul ul {
     display: none;
     position: absolute;
     top: 100%;
+	
 }
 #nav_menu ul ul li {
 	float: none;
 }
 #nav_menu ul li:hover > ul {
 	display: block;
+	width: 100%;
 }
 #nav_menu > ul::after {
     content: "";
@@ -87,9 +95,9 @@ header img {
 
 /* the styles for the section */
 section {
-	width: 525px;
+	width: 525%;
 	float: right;
-	padding: 0 20px 20px 20px;
+	padding: 0 20% 20px 20%;
 }
 section h1 {
 	font-size: 150%;
@@ -137,9 +145,9 @@ article img {
 
 /* the styles for the aside */
 aside {
-	width: 215px;
+	width: 215%;
 	float: right;
-	padding: 0 0 20px 20px;
+	padding: 0 0 20px 20%;
 }
 aside h2 {
 	color: #800000;
